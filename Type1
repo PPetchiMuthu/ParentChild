@@ -1,0 +1,21 @@
+class Parent {
+
+     void print() {
+        printLn();
+    }
+
+    void printLn() {
+    }
+}
+
+class Child extends Parent {
+
+    void printLn() {
+        System.out.println("helloo");
+    }
+
+    public static void main(String[] args) {
+        Child obj = new Child();
+        obj.print();
+    }
+}
