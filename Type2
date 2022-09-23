@@ -1,0 +1,17 @@
+abstract class Parent {
+    abstract void println();
+
+    void print() {
+        println();
+    }
+}
+class Child extends Parent {
+    void println() {
+        System.out.println("hello");
+    }
+
+    public static void main(String[] args) {
+        Child obj = new Child();
+        obj.println();
+    }
+}
