@@ -2,19 +2,20 @@ public interface ParentChild {
     void printLn();
 }
 
-abstract class Parent2 implements ParentChild {
+abstract class Parent implements ParentChild {
     void print() {
         printLn();
     }
 }
 
-class Child2 extends Parent2 {
+class Child extends Parent {
    
     public void printLn() {
         System.out.println("hello");
     }
 
     public static void main(String[] args) {
-        Child2 obj = new Child2();
+        Child obj = new Child();
+        obj.print();
     }
 }
